@@ -7,14 +7,18 @@ def init_db():
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         name TEXT,
         result TEXT,
+        confidence REAL,
         date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )''')
     conn.commit()
     conn.close()
 
-def save_result(name, result):
+def save_result(name, result, confidence=None):
     conn = sqlite3.connect('records.db')
     c = conn.cursor()
-    c.execute("INSERT INTO results (name, result) VALUES (?, ?)", (name, result))
+    c.execute(
+        "INSERT INTO results (name, result, confidence) VALUES (?, ?, ?)",
+        (name, result, confidence)
+    )
     conn.commit()
     conn.close()
