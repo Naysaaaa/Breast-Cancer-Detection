@@ -363,7 +363,7 @@ header.pack(fill="x", side="top")
 header.pack_propagate(False)
 
 tk.Label(
-    header, text="🎀  Breast Cancer AI Assistant",
+    header, text="🎀  Breast Cancer Detection & AI Assistant",
     font=("Segoe UI", 16, "bold"), fg="white", bg=COLOR_HEADER
 ).pack(pady=6)
 tk.Label(
