@@ -24,7 +24,7 @@ This project was built to demonstrate the **full ML product lifecycle**: data pr
 
 | Data Entry Form | Prediction Result |
 |:---:|:---:|
-| ![App form layout](screenshots/app-layout.png) | ![Prediction result](screenshots/app-prediction-result.png) |
+| ![App form layout](app-layout.png) | ![Prediction result](app-prediction-result.png) |
 | *Patient info + 30 features organized into Mean / SE / Worst columns* | *Model output with confidence score, saved to the local database* |
 
 ---
