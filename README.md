@@ -182,6 +182,8 @@ While this project is a portfolio/educational build, the same architecture patte
 
 ## 👤 Author
 Naysa
+
+
 Built as a demonstration of end-to-end machine learning product development — from data science to a usable, user-facing application.
 
 ---
